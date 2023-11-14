@@ -1,0 +1,90 @@
+:root {
+  --secondary-color: #f70776;
+  --transition: all 0.2s ease-in-out;
+}
+
+body {
+  text-align: center;
+  background-color: #1d1d24;
+  color: #eeeeee;
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-size: 85px;
+  font-weight: 700;
+}
+
+h1,
+h2,
+.buttons {
+  position: relative;
+}
+
+h2 {
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(216, 79, 120);
+  transition: var(--transition);
+}
+
+i {
+  font-size: 30px;
+}
+
+.footer a {
+  font-size: 16px;
+}
+
+.header {
+  position: relative;
+  padding: 170px 0;
+}
+
+.header::before {
+  content: "";
+  background-image: url(/media/header.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.37;
+}
+
+.buttons a {
+  margin: 120px 105px;
+  border: 1px solid var(--secondary-color);
+  padding: 12px 17px;
+  color: var(--secondary-color);
+}
+
+.buttons a:hover {
+  background-color: #700436;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.icons a {
+  display: block;
+}

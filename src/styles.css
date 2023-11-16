@@ -3,11 +3,6 @@
   --transition: all 0.3s ease-in-out;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   text-align: center;
   background-color: #1d1d24;
@@ -15,6 +10,8 @@ body {
   font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .content {
@@ -85,6 +82,7 @@ i {
 }
 
 .footer {
+  background-color: rgb(29, 29, 36, 0.6);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -106,6 +104,14 @@ i {
 
 .icons a {
   display: block;
+}
+
+.about-header {
+  font-size: 40px;
+}
+
+.about-img {
+  box-shadow: 10px 10px 20px rgba(247, 7, 118, 0.2);
 }
 
 @media (max-width: 576px) {

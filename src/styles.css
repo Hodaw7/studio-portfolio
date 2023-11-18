@@ -106,12 +106,32 @@ i {
   display: block;
 }
 
-.about-header {
+.about-page h1 {
   font-size: 40px;
 }
 
-.about-img {
+.about-page img {
   box-shadow: 10px 10px 20px rgba(247, 7, 118, 0.2);
+}
+
+.work-page img {
+  width: 400px;
+  margin: 6px;
+  border-radius: 5px;
+  filter: contrast(75%) brightness(90%) grayscale(100%);
+  transition: filter 0.2s ease-in-out;
+}
+
+.work-page img:hover {
+  filter: none;
+}
+
+.work-page h3 {
+  margin: 30px 0 30px 0;
+}
+
+.work-page .footer {
+  position: relative;
 }
 
 @media (max-width: 576px) {
@@ -119,7 +139,8 @@ i {
     font-size: 35px;
   }
 
-  h2 {
+  h2,
+  h3 {
     font-size: 20px;
   }
 
@@ -130,5 +151,6 @@ i {
   .footer {
     max-width: 75%;
     margin-top: 10px;
+    bottom: 10px;
   }
 }

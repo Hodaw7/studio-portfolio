@@ -19,13 +19,17 @@ body {
 }
 
 h1 {
-  font-size: 85px;
+  font-size: 55px;
   font-weight: 700;
 }
 
+h3,
 h2 {
-  font-size: 25px;
-  margin-top: 20px;
+  margin: 30px 0 30px 0;
+}
+
+h3 {
+  font-size: 23px;
 }
 
 h1,
@@ -48,6 +52,10 @@ a:hover {
 i {
   font-size: 30px;
   transition: var(--transition);
+}
+
+.index-page h1 {
+  font-size: 85px;
 }
 
 .header {
@@ -82,16 +90,20 @@ i {
 }
 
 .footer {
-  background-color: rgb(29, 29, 36, 0.6);
+  background-color: rgb(29, 29, 36, 0.7);
+  margin-top: 80px;
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  padding: 12px 0;
+}
+
+.footer-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   max-width: 50%;
   margin: 0 auto;
-  margin-top: 80px;
-  position: sticky;
-  bottom: 30px;
-  width: 100%;
 }
 
 .footer a {
@@ -104,10 +116,6 @@ i {
 
 .icons a {
   display: block;
-}
-
-.about-page h1 {
-  font-size: 40px;
 }
 
 .about-page img {
@@ -126,12 +134,18 @@ i {
   filter: none;
 }
 
-.work-page h3 {
-  margin: 30px 0 30px 0;
-}
-
 .work-page .footer {
   position: relative;
+}
+
+.contact-page img {
+  width: 400px;
+  border-radius: 5px;
+}
+
+.contact-page p {
+  margin: 60px 0 0 0;
+  font-size: 20px;
 }
 
 @media (max-width: 576px) {
@@ -139,8 +153,7 @@ i {
     font-size: 35px;
   }
 
-  h2,
-  h3 {
+  h2 {
     font-size: 20px;
   }
 
@@ -149,8 +162,10 @@ i {
   }
 
   .footer {
-    max-width: 75%;
     margin-top: 10px;
-    bottom: 10px;
+  }
+
+  .footer-content {
+    max-width: 75%;
   }
 }

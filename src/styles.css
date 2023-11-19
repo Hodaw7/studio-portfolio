@@ -58,6 +58,12 @@ h2,
   position: relative;
 }
 
+img {
+  width: 400px;
+  height: auto;
+  border-radius: 5px;
+}
+
 a {
   color: var(--secondary-color);
   text-decoration: none;
@@ -146,9 +152,7 @@ footer a {
 }
 
 .work-page img {
-  width: 390px;
   margin: 6px;
-  border-radius: 5px;
   filter: contrast(75%) brightness(90%) grayscale(100%);
   transition: filter 0.2s ease-in-out;
 }
@@ -159,11 +163,6 @@ footer a {
 
 .work-page footer {
   position: relative;
-}
-
-.contact-page img {
-  width: 390px;
-  border-radius: 5px;
 }
 
 .contact-page p {
@@ -200,5 +199,12 @@ footer a {
 
   .credit {
     font-size: 10px;
+  }
+
+  .work-page img,
+  img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0 auto;
   }
 }
